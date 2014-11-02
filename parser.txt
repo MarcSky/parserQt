@@ -1,0 +1,14 @@
+system:start
+mainpassword:1234515151
+login:programmer
+system:end
+google:start
+password:coder
+login:levan
+email:levan@gmail.com
+google:end
+vk:start
+password:coder
+login:levan
+email:levan@gmail.com
+vk:end
