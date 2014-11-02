@@ -1,15 +1,6 @@
 #include <QCoreApplication>
 #include <QtCore>
 #include <QDebug>
-typedef struct {
-    QString password;
-    QString login;
-    QString site;
-} site;
-
-typedef struct system{
-    QString password;
-}systems;
 
 void parser(const QByteArray &text) {
     QStringList systemWords;
@@ -68,26 +59,6 @@ void parser(const QByteArray &text) {
         }
         i++;
     }
-    /*i = 0;
-    while(i < sitesList.size()){
-            QMapIterator <QString, QString> Iter(sitesList[i]);
-            while(Iter.hasNext()) {
-                Iter.next();
-                qDebug() << "key: " << Iter.key() << "value: " << Iter.value();
-            }
-        i++;
-    }
-
-    i = 0;
-    qDebug() << systemList.size();
-    while(i < systemList.size()){
-            QMapIterator <QString, QString> Iter(systemList[i]);
-            while(Iter.hasNext()) {
-                Iter.next();
-                qDebug() << "key: " << Iter.key() << "value: " << Iter.value();
-            }
-        i++;
-    }*/
 }
 
 
